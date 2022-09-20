@@ -48,7 +48,7 @@
 <body>
   <header class="container-fluid">
     <!-- contents on the top only on big screen-->
-    <div id="topnav" class="row bg-light pt-lg-2 d-none d-lg-flex mb-3">
+    <div id="topnav" class="row pt-lg-2 d-none d-lg-flex mb-3">
       <!-- logo -->
       <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -56,17 +56,18 @@
         </a>
       </div>
     
-      <!--account contact, & shopping cart -->
+      <!--resume, projects stuff -->
       <div class="col-12 col-lg-9 my-auto py-1 py-lg-0 ">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
 
           <li class="list-inline-item">
-                <div class="text-center">
-                    <div><i class="fas fa-account fa-lg"></i></div>
-                    <p class="my-0">Resume</p>
-                </div>
+            <a class="text-black nav-link" href="#">
+              <div class="text-center">
+                <div><i class="fas fa-file fa-lg"></i></div>
+                <p class="my-0">Resume</p>
+              </div>
             </a>
-              </li>
+          </li>
           <li class="list-inline-item dropdown">
             <a class="text-black nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="text-center">
@@ -75,7 +76,7 @@
               </div>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
-              <a href="#" class="dropdown-item">Stop Motion</a>
+              <a href="{% url 'stopmotion' %}" class="dropdown-item">Stop Motion</a>
               <a href="#" class="dropdown-item">Tutorials</a>
             </div>
           </li>
@@ -83,7 +84,7 @@
           <li class="list-inline-item">
             <a class="text-black nav-link" href="#">
               <div class="text-center">
-                <div><i class="fas fa-computer fa-lg"></i></div>
+                <div><i class="fas fa-laptop fa-lg"></i></div>
                 <p class="my-0">Web Design</p>
               </div>
             </a>
